@@ -1,0 +1,19 @@
+/* Navbar hover effect */
+.nav-link-effect:hover {
+    background-color: rgba(127, 34, 202, 0.645);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar link animation */
+.nav-link-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link-effect:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    font-family: monospace;
+}

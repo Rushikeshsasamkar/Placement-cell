@@ -1,0 +1,57 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Custom styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6e9e9;
+    
+}
+
+.table-container {
+    width: 75%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.btn-success:hover {
+    background-color: #28a745;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+/* Hover effect for rows */
+.row-ref:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    cursor: pointer;
+}
+
+/* Animation for Update button */
+.btn-update {
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+.btn-update:hover {
+    transform: scale(1.1);
+}
+
+/* Apply font to table content */
+.table tbody td {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Additional styling for header title */
+.header-title {
+    font-weight: 700;
+}

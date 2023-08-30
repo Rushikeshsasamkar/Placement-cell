@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('_bootstrap_meta') %>
+    <title>Create Student Form</title>
+    <style>
+        /* Custom form styling */
+        body {
+            background-color: #e6e9e9;
+        }
+
+        .form-container {
+            width: 50%;
+            margin: auto;
+            margin-top: 4rem;
+            height: 100%;
+            display: grid;
+            place-content: center;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+            padding: 50px 70px;
+        }
+
+        .form-container h3 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Add hover effect to buttons */
+        .btn-success:hover {
+            background-color: #28a745;
+        }
+
+        /* Add animation to input fields */
+        .form-control:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <%- include('_header') %>
+    <form class="form-container" action="/students/create-student" method="post">
+        <h3>Add Student</h3>
+        <fieldset class="form-group">
+            <label for="batch">Batch</label>
+            <input type="text" class="form-control" id="batch" name="batch" />
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" />
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" name="email" />
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="contactNumber" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="contactNumber" name="contactNumber" />
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="college" class="form-label">College Name</label>
+            <input type="text" class="form-control" id="college" name="college" />
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="placement" class="form-label">Placement Status</label>
+            <select class="form-select" aria-label="Default select example" name="placement" id="placement">
+                <option value="Placed">Placed</option>
+                <option value="Not Placed">Not Placed</option>
+            </select>
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <div class="mb-3" style="display: flex; justify-content: space-between">
+                <div class="mb-3 p-1">
+                    <label for="dsa" class="form-label">DSA</label>
+                    <input type="text" class="form-control" id="dsa" name="dsa" />
+                </div>
+                <div class="mb-3 p-1">
+                    <label for="webd" class="form-label">Web Development</label>
+                    <input type="text" class="form-control" id="webd" name="webd" />
+                </div>
+                <div class="mb-3 p-1">
+                    <label for="react" class="form-label">React</label>
+                    <input type="text" class="form-control" id="react" name="react" />
+                </div>
+            </div>
+        </fieldset>
+        
+        <button type="submit" class="btn btn-success align-self-center">Create Student</button>
+    </form>
+    <%- include('_bootstrap_script') %>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/header.css">
+</head>
+<body>
+    <% if (locals.user) { %>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"> <i class="fa fa-chevron-left"></i> Home Page</a>
+            <a class="nav-links navbar-brand" href="/">Welcome <%=locals.user.name%></a>
+            <form class="d-flex px-4 nav-links">
+                <a class="navbar-brand p-2 nav-link-effect" href="/company/home">Company List</a>
+                <a class="navbar-brand p-2 nav-link-effect" href="/users/download-csv">Download Report</a>
+                <a class="navbar-brand p-2 nav-link-effect" href="/users/signout">Sign out</a>
+            </form>
+        </div>
+    </nav>
+    <% } %>
+</body>
+</html>
