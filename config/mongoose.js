@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 // mongoose.set('strictQuery',true);
 // const dotenv = require('.env');
-const DB = 'mongodb+srv://technical123:vjaFys0QNDTETVp7@cluster0.tqqem2h.mongodb.net/';
+const DB = 'mongodb+srv://rushikeshsasamakar:Rushi111@cluster0.9ktk8j6.mongodb.net/';
 // dotenv.config({ path: 'config/.env' });
 
 //connecting mongoose with database
